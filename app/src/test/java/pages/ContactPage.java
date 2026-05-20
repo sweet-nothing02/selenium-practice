@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class ContactPage extends BasePage {
 
-    @FindBy(xpath = "//h1[contains(text(), 'Kapcsolat')]")
+    @FindBy(xpath = "//h1[contains(text(), 'Contact') or contains(text(), 'CUSTOMER SERVICE')]")
     private WebElement pageHeader;
 
     @FindBy(name = "contact_name")

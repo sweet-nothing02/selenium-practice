@@ -9,7 +9,7 @@ public class AdvancedTest extends BaseTest {
 
     @Test(description = "Use JavascriptExecutor to scroll")
     public void testJavascriptScroll() {
-        driver.get("https://www.cinemacity.hu/static/hu/hu/about-us");
+        driver.get("https://www.cinemacity.hu/en/about-us");
         AboutUsPage aboutUsPage = new AboutUsPage(driver);
         aboutUsPage.scrollToContent();
         Assert.assertTrue(true);
@@ -17,10 +17,10 @@ public class AdvancedTest extends BaseTest {
 
     @Test(description = "Test browser history navigation")
     public void testBrowserHistory() {
-        driver.get("https://www.cinemacity.hu/static/hu/hu/about-us");
+        driver.get("https://www.cinemacity.hu/en/about-us");
         String firstTitle = driver.getTitle();
 
-        driver.get("https://www.cinemacity.hu/static/hu/hu/privacy-policy");
+        driver.get("https://www.cinemacity.hu/en/privacy-policy-hu");
         PrivacyPolicyPage privacyPage = new PrivacyPolicyPage(driver);
         privacyPage.navigateBack();
 

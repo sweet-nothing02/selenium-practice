@@ -10,9 +10,9 @@ public class FunctionalTest extends BaseTest {
     @Test(description = "Test multiple static pages in a loop")
     public void testMultipleStaticPages() {
         String[] pages = {
-            "https://www.cinemacity.hu/static/hu/hu/about-us",
-            "https://www.cinemacity.hu/static/hu/hu/contact",
-            "https://www.cinemacity.hu/static/hu/hu/privacy-policy"
+            "https://www.cinemacity.hu/en/about-us",
+            "https://www.cinemacity.hu/en/call-center",
+            "https://www.cinemacity.hu/en/privacy-policy-hu"
         };
 
         for (String url : pages) {
@@ -23,7 +23,7 @@ public class FunctionalTest extends BaseTest {
 
     @Test(description = "Fill contact form fields")
     public void testContactFormInputs() {
-        driver.get("https://www.cinemacity.hu/static/hu/hu/contact");
+        driver.get("https://www.cinemacity.hu/en/call-center");
         ContactPage contactPage = new ContactPage(driver);
         
         try {
