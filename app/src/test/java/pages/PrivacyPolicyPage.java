@@ -1,0 +1,13 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class PrivacyPolicyPage extends BasePage {
+    public PrivacyPolicyPage(WebDriver driver) {
+        super(driver);
+    }
+    
+    public void navigateBack() {
+        driver.navigate().back();
+    }
+}

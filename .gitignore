@@ -1,0 +1,15 @@
+# Gradle
+.gradle/
+build/
+.configuration-cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and screenshots (inside build/ anyway, but good to have)
+*.log
+hs_err_pid*
+
+# Selenium / WebDriverManager
+.webdriver/
